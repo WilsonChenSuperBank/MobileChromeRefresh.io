@@ -6,12 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Mobile Chrome Refresh</title>
     <style>
-      body{
+      body {
         overscroll-behavior-y: contain;
       }
     </style>
   </head>
   <body>
+
+    <h1 class="ssJumpRed">0</h1>
 
     <p>111111</p>
     <p>111111</p>
@@ -42,7 +44,7 @@
         var touchStartHandler = function(e) {
           if (e.touches.length !== 1) return;
           lastTouchY = e.touches[0].clientY;
-          isWindowTop = (window.pageYOffset <= 50);
+          isWindowTop = window.pageYOffset <= 50;
         };
 
         var touchMoveHandler = function(e) {
@@ -63,6 +65,26 @@
         document.addEventListener("touchstart", touchStartHandler, false);
         document.addEventListener("touchmove", touchMoveHandler, false);
       });
+
+      var create_random_string = random_dom => {
+        for (i = 0; i <= random_dom; i++) {
+          (function(i) {
+            setTimeout(function() {
+              //console.log(random_dom-i);
+              if (random_dom - i == 0) {
+                document.getElementsByClassName("ssJumpRed")[0].innerHTML =
+                  random_dom - i;
+                console.log("跳轉頁面");
+              } else {
+                document.getElementsByClassName("ssJumpRed")[0].innerHTML =
+                  random_dom - i;
+              }
+            }, (i + 1) * 1000);
+          })(i);
+        }
+      };
+
+      create_random_string(5);
     </script>
   </body>
 </html>
