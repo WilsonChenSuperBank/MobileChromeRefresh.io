@@ -14,10 +14,10 @@
           transform: rotate(360deg);
         }
       }
-      body{
-        width:100%;
-        height:100vh;
-        background-color:#ccc;
+      body {
+        width: 100%;
+        height: 100vh;
+        background-color: #ccc;
       }
 
       .spinRRR {
@@ -25,30 +25,49 @@
         width: 200px;
         height: 200px;
         background-color: green;
-        border-radius:50%;
-        margin:0 auto;
-        position:relative;
+        border-radius: 50%;
+        margin: 0 auto;
+        position: relative;
       }
-      .spinRRR .watermallen{
-        border-radius:50%;
-        position:absolute;
-        background-color:red;
-        width:150px;
-        height:150px;
-        top:50%;
-        left:50%;
+      .spinRRR .watermallen {
+        border-radius: 50%;
+        position: absolute;
+        width: 150px;
+        height: 150px;
+        top: 50%;
+        left: 50%;
         transform: translateX(-50%) translateY(-50%);
-
+      }
+      .spinRRR .watermallen.red {
+        background-color: red;
+      }
+      .spinRRR .watermallen.yellow {
+        background-color: yellow;
       }
     </style>
   </head>
   <body>
     <div class="spinRRR">
-      <div class="watermallen">
-        <p>1111</p>
-        <p>1111</p>
-        <p>1111</p>
-     </div>
+      <div class="watermallen red">
+        <p>小林的西瓜</p>
+        <p>小林的西瓜</p>
+        <p>小林的西瓜</p>
+      </div>
     </div>
+    <div class="spinRRR">
+      <div class="watermallen yellow">
+        <p>小林的西瓜</p>
+        <p>小林的西瓜</p>
+        <p>小林的西瓜</p>
+      </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <Script>
+    $(".spinRRR").on("click",function(){
+      alert("小林我愛你");
+    })
+    
+
+    </Script>
   </body>
 </html>
