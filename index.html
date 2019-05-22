@@ -12,7 +12,6 @@
     </style>
   </head>
   <body>
-
     <h1 class="ssJumpRed">0</h1>
 
     <p>111111</p>
@@ -35,7 +34,7 @@
     <p>111111</p>
     <p>111111</p>
     <p>111111</p>
-
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@8"></script>
     <script>
       window.addEventListener("load", function() {
         var isWindowTop = false;
@@ -75,6 +74,28 @@
                 document.getElementsByClassName("ssJumpRed")[0].innerHTML =
                   random_dom - i;
                 console.log("跳轉頁面");
+                const ipAPI = "https://api.ipify.org?format=json";
+
+                Swal.queue([
+                  {
+                    title: "Your public IP",
+                    confirmButtonText: "Show my public IP",
+                    text:
+                      "Your public IP will be received " + "via AJAX request",
+                    showLoaderOnConfirm: true,
+                    preConfirm: () => {
+                      return fetch(ipAPI)
+                        .then(response => response.json())
+                        .then(data => Swal.insertQueueStep(data.ip))
+                        .catch(() => {
+                          Swal.insertQueueStep({
+                            type: "error",
+                            title: "Unable to get your public IP"
+                          });
+                        });
+                    }
+                  }
+                ]);
               } else {
                 document.getElementsByClassName("ssJumpRed")[0].innerHTML =
                   random_dom - i;
