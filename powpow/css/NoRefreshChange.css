@@ -1,0 +1,134 @@
+body {
+  margin: 0;
+  width: 768px;
+  margin: 0 auto;
+}
+
+header {
+  padding: 20px;
+  background-color: #fff;
+  text-align: center;
+}
+
+header img {
+  width: 350px;
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"] + label span.fakeChk i.fa-square {
+  display: inline-block;
+}
+
+input[type="checkbox"]:checked + label span.fakeChk i.fa-square {
+  display: none;
+}
+
+input[type="checkbox"] + label span.fakeChk i.fa-check-square {
+  display: none;
+}
+
+input[type="checkbox"]:checked + label span.fakeChk i.fa-check-square {
+  display: inline-block;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"] + label span.fakeChk i.fa-circle {
+  display: inline-block;
+}
+
+input[type="radio"]:checked + label span.fakeChk i.fa-circle {
+  display: none;
+}
+
+input[type="radio"] + label span.fakeChk i.fa-dot-circle {
+  display: none;
+}
+
+input[type="radio"]:checked + label span.fakeChk i.fa-dot-circle {
+  display: inline-block;
+}
+
+.container {
+  margin: 0 auto;
+}
+
+.questionAll {
+  width: 100%;
+}
+
+.questionAll .question {
+  background-color: #f4f4f4;
+  height: 30vh;
+  display: none;
+  padding: 32px;
+}
+
+.questionAll .question p {
+  font-size: 22px;
+  text-align: left;
+  margin-bottom: 32px;
+}
+
+.questionAll .question label {
+  font-size: 22px;
+}
+
+.question.appear {
+  display: block;
+}
+
+.questionChange ul {
+  background-color: #000;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 32px;
+}
+
+.questionChange ul li {
+  display: inline-block;
+  cursor: pointer;
+  padding: 10px;
+  color: #4d4d4d;
+  font-size: 22px;
+  position: relative;
+}
+
+.questionChange ul li span {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  width: 19px;
+  height: 11px;
+  background-color: #f4f4f4;
+  -webkit-clip-path: polygon(50% 100%, 0 0, 100% 0);
+          clip-path: polygon(50% 100%, 0 0, 100% 0);
+}
+
+.questionChange ul li.active {
+  color: #fff;
+}
+
+.questionChange ul li.active span {
+  display: block;
+}
+
+@media screen and (max-width: 769px) {
+  body {
+    width: 414px;
+  }
+}
+/*# sourceMappingURL=NoRefreshChange.css.map */
