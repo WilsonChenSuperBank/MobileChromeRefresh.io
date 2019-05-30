@@ -90,6 +90,17 @@ input[type="radio"]:checked + label {
 .container {
     margin: 0 auto;
 }
+//index
+
+.indexImg{
+    img{
+        width:300px;
+    }
+}
+
+//page2
+
+$paddingRightLeft:32px;
 
 .questionAll {
     width: 100%;
@@ -98,7 +109,8 @@ input[type="radio"]:checked + label {
         background-color: #f4f4f4;
         height: 30vh;
         display: none;
-        padding: 32px;
+        padding: $paddingRightLeft;
+        position:relative;
 
         p {
             font-size: 22px;
@@ -108,6 +120,21 @@ input[type="radio"]:checked + label {
 
         label {
             font-size: 22px;
+        }
+
+        button.next , button.last , button.go{
+            padding:10px;
+            background-color: skyblue;
+            position:absolute;
+            bottom:32px;
+            cursor: pointer;
+        }
+
+        button.next,button.go{
+            right:$paddingRightLeft;
+        }
+        button.last{
+            left:$paddingRightLeft;
         }
     }
 }

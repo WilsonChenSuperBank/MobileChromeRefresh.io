@@ -58,6 +58,10 @@ input[type="radio"]:checked + label span.fakeChk i.fa-dot-circle {
   margin: 0 auto;
 }
 
+.indexImg img {
+  width: 300px;
+}
+
 .questionAll {
   width: 100%;
 }
@@ -67,6 +71,7 @@ input[type="radio"]:checked + label span.fakeChk i.fa-dot-circle {
   height: 30vh;
   display: none;
   padding: 32px;
+  position: relative;
 }
 
 .questionAll .question p {
@@ -77,6 +82,22 @@ input[type="radio"]:checked + label span.fakeChk i.fa-dot-circle {
 
 .questionAll .question label {
   font-size: 22px;
+}
+
+.questionAll .question button.next, .questionAll .question button.last, .questionAll .question button.go {
+  padding: 10px;
+  background-color: skyblue;
+  position: absolute;
+  bottom: 32px;
+  cursor: pointer;
+}
+
+.questionAll .question button.next, .questionAll .question button.go {
+  right: 32px;
+}
+
+.questionAll .question button.last {
+  left: 32px;
 }
 
 .question.appear {
