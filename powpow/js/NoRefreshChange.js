@@ -24,9 +24,19 @@ $(".question button.go").on("click", function () {
 
    if (question8From && question7From && question6From && question5From && question4From && question3From && question2From && question1From) {
       console.log("go");
+      Swal.fire({
+         type: 'success',
+         title: '恭喜您完成問卷',
+         text: '可以回家睡覺ㄌ'
+       })
    }
    else {
       console.log("not go");
+      Swal.fire({
+         type: 'error',
+         title: '還有東西沒填',
+         text: '可以專心一點ㄇ'
+       })
    }
 });
 
