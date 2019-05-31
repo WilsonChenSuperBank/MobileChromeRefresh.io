@@ -40,6 +40,15 @@ $(".question button.go").on("click", function () {
    }
 });
 
+var clk = 0;
+
+$("input[name=question6]").on("click",function(){
+   clk++;
+   if(clk>10){
+      $("#eggClk").attr("style","display:inline-block");
+   }
+})
+
 //判斷input radio checkbox 有無勾選funtcion
 function inputChkTf(inputName, pageValue) {
    var questionFrom = false;
