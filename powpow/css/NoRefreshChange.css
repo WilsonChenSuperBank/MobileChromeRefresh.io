@@ -72,7 +72,7 @@ input[type="radio"]:checked + label span.fakeChk i.fa-dot-circle {
 
 .questionAll .question {
   background-color: #f4f4f4;
-  height: 30vh;
+  height: 400px;
   display: none;
   padding: 32px;
   position: relative;
