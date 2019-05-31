@@ -94,8 +94,28 @@ input[type="radio"]:checked + label {
 
 .indexImg {
     img {
-        width: 300px;
+        width: 100%;
     }
+}
+
+.indexBtn {
+    background-color: #4CAF50; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    width:100%;
+}
+
+h1{
+    text-align:center;
+    font-size:32px;
+    padding:10px;
 }
 
 //page2
@@ -104,9 +124,11 @@ $paddingRightLeft: 32px;
 
 .questionAll {
     width: 100%;
-    .questionWindow{
-        margin-bottom:10px;
+
+    .questionWindow {
+        margin-bottom: 10px;
     }
+
     .question {
         background-color: #f4f4f4;
         height: 400px;
@@ -123,7 +145,6 @@ $paddingRightLeft: 32px;
         label {
             font-size: 22px;
             height: 22px;
-            
             display: inline-block;
             padding: 6px;
         }
@@ -144,7 +165,6 @@ $paddingRightLeft: 32px;
             display: inline-block;
             font-size: 16px;
             margin: 4px 2px;
-            
             cursor: pointer;
         }
 
