@@ -74,28 +74,34 @@
                 </div>
                 <div class="question" data-page="2">
                     <p>Q2??????????</p>
-                    <input type="radio" name="question2" id="risk1">
-                    <label for="risk1">
-                        <span class="fakeChk">
-                            <i class="far fa-circle"></i>
-                            <i class="far fa-dot-circle"></i>
-                        </span>
-                        (超過20%)</label>
-                    <input type="radio" name="question2" id="risk2">
-                    <label for="risk2">
-                        <span class="fakeChk">
-                            <i class="far fa-circle"></i>
-                            <i class="far fa-dot-circle"></i>
-                        </span>
-                        (10~20%)
-                    </label>
-                    <input type="radio" name="question2" id="risk3"><label for="risk3">
-                        <span class="fakeChk">
-                            <i class="far fa-circle"></i>
-                            <i class="far fa-dot-circle"></i>
-                        </span>
-                        (10%以下)
-                    </label>
+                    <div class="questionWindow">
+                        <input type="radio" name="question2" id="risk1">
+                        <label for="risk1">
+                            <span class="fakeChk">
+                                <i class="far fa-circle"></i>
+                                <i class="far fa-dot-circle"></i>
+                            </span>
+                            (超過20%)</label>
+                    </div>
+                    <div class="questionWindow">
+                        <input type="radio" name="question2" id="risk2">
+                        <label for="risk2">
+                            <span class="fakeChk">
+                                <i class="far fa-circle"></i>
+                                <i class="far fa-dot-circle"></i>
+                            </span>
+                            (10~20%)
+                        </label>
+                    </div>
+                    <div class="questionWindow">
+                        <input type="radio" name="question2" id="risk3"><label for="risk3">
+                            <span class="fakeChk">
+                                <i class="far fa-circle"></i>
+                                <i class="far fa-dot-circle"></i>
+                            </span>
+                            (10%以下)
+                        </label>
+                    </div>
                     <button data-page="1" class="last">Last.</button>
                     <button data-page="3" class="next">Next.</button>
                 </div>
@@ -146,51 +152,69 @@
                 </div>
                 <div class="question" data-page="4">
                     <p>Q4?????????</p>
-                    <input type="checkbox" id="satisfaction1"><label for="satisfaction1"> <span class="fakeChk">
-                            <i class="far fa-square"></i>
-                            <i class="far fa-check-square"></i>
-                        </span>1111</label>
-                    <input type="checkbox" id="satisfaction2"><label for="satisfaction2"> <span class="fakeChk">
-                            <i class="far fa-square"></i>
-                            <i class="far fa-check-square"></i>
-                        </span>2222</label>
-                    <input type="checkbox" id="satisfaction3"><label for="satisfaction3"> <span class="fakeChk">
-                            <i class="far fa-square"></i>
-                            <i class="far fa-check-square"></i>
-                        </span>3333</label>
-                    <input type="radio" name="satisfaction" id="satisfaction4"><label for="satisfaction4"><span
-                            class="fakeChk">
-                            <i class="far fa-circle"></i>
-                            <i class="far fa-dot-circle"></i>
-                        </span>4444</label>
-                    <input type="radio" name="satisfaction" id="satisfaction5"><label for="satisfaction5"><span
-                            class="fakeChk">
-                            <i class="far fa-circle"></i>
-                            <i class="far fa-dot-circle"></i>
-                        </span>5555</label>
+                    <div class="questionWindow">
+                        <input type="checkbox" id="satisfaction1" name="question4"><label for="satisfaction1"> <span
+                                class="fakeChk">
+                                <i class="far fa-square"></i>
+                                <i class="far fa-check-square"></i>
+                            </span>1111</label>
+                    </div>
+                    <div class="questionWindow">
+                        <input type="checkbox" id="satisfaction2" name="question4"><label for="satisfaction2"> <span
+                                class="fakeChk">
+                                <i class="far fa-square"></i>
+                                <i class="far fa-check-square"></i>
+                            </span>2222</label>
+                    </div>
+                    <div class="questionWindow">
+                        <input type="checkbox" id="satisfaction3" name="question4"><label for="satisfaction3"> <span
+                                class="fakeChk">
+                                <i class="far fa-square"></i>
+                                <i class="far fa-check-square"></i>
+                            </span>3333</label>
+                    </div>
+                    <div class="questionWindow">
+                        <input type="radio" name="question5" id="satisfaction4"><label for="satisfaction4"><span
+                                class="fakeChk">
+                                <i class="far fa-circle"></i>
+                                <i class="far fa-dot-circle"></i>
+                            </span>4444</label>
+                    </div>
+                    <div class="questionWindow">
+                        <input type="radio" name="question5" id="satisfaction5"><label for="satisfaction5"><span
+                                class="fakeChk">
+                                <i class="far fa-circle"></i>
+                                <i class="far fa-dot-circle"></i>
+                            </span>5555</label>
+                    </div>
                     <button data-page="3" class="last">Last.</button>
                     <button data-page="5" class="next">Next.</button>
                 </div>
                 <div class="question" data-page="5">
                     <p>Q5???????</p>
-                    <input type="radio" name="agree" id="agree1">
-                    <label for="agree1">
-                        <span class="fakeChk">
-                            <i class="far fa-circle"></i>
-                            <i class="far fa-dot-circle"></i>
-                        </span>同意</label>
-                    <input type="radio" name="agree" id="agree2">
-                    <label for="agree2">
-                        <span class="fakeChk">
-                            <i class="far fa-circle"></i>
-                            <i class="far fa-dot-circle"></i>
-                        </span>不同意</label>
+                    <div class="questionWindow">
+                        <input type="radio" name="question6" id="agree1">
+                        <label for="agree1">
+                            <span class="fakeChk">
+                                <i class="far fa-circle"></i>
+                                <i class="far fa-dot-circle"></i>
+                            </span>同意</label>
+                    </div>
+                    <div class="questionWindow">
+                        <input type="radio" name="question6" id="agree2">
+                        <label for="agree2">
+                            <span class="fakeChk">
+                                <i class="far fa-circle"></i>
+                                <i class="far fa-dot-circle"></i>
+                            </span>不同意</label>
+                    </div>
                     <button data-page="4" class="last">Last.</button>
                     <button data-page="6" class="next">Next.</button>
                 </div>
                 <div class="question" data-page="6">
                     <p>Q6?????????</p>
-                    <input type="checkbox" id="interesting1">
+                    <div class="questionWindow">
+                    <input type="checkbox" name="question7" id="interesting1">
                     <label for="interesting1">
                         <span class="fakeChk">
                             <i class="far fa-square"></i>
@@ -198,7 +222,9 @@
                         </span>
                         卡
                     </label>
-                    <input type="checkbox" id="interesting2">
+                    </div>
+                    <div class="questionWindow">
+                    <input type="checkbox" name="question7" id="interesting2">
                     <label for="interesting2">
                         <span class="fakeChk">
                             <i class="far fa-square"></i>
@@ -206,7 +232,9 @@
                         </span>
                         款
                     </label>
-                    <input type="checkbox" id="interesting3">
+                    </div>
+                    <div class="questionWindow">
+                    <input type="checkbox" name="question7" id="interesting3">
                     <label for="interesting3">
                         <span class="fakeChk">
                             <i class="far fa-square"></i>
@@ -214,7 +242,9 @@
                         </span>
                         車
                     </label>
-                    <input type="checkbox" id="interesting4">
+                    </div>
+                    <div class="questionWindow">
+                    <input type="checkbox" name="question7" id="interesting4">
                     <label for="interesting4">
                         <span class="fakeChk">
                             <i class="far fa-square"></i>
@@ -222,7 +252,9 @@
                         </span>
                         房
                     </label>
-                    <input type="checkbox" id="interesting5">
+                    </div>
+                    <div class="questionWindow">
+                    <input type="checkbox" name="question7" id="interesting5">
                     <label for="interesting5">
                         <span class="fakeChk">
                             <i class="far fa-square"></i>
@@ -230,12 +262,14 @@
                         </span>
                         企
                     </label>
+                    </div>
                     <button data-page="5" class="last">Last.</button>
                     <button data-page="7" class="next">Next.</button>
                 </div>
                 <div class="question" data-page="7">
                     <p>QQ7?????</p>
-                    <input type="checkbox" id="newho1">
+                    <div class="questionWindow">
+                    <input type="checkbox" name="question8" id="newho1">
                     <label for="newho1">
                         <span class="fakeChk">
                             <i class="far fa-square"></i>
@@ -243,7 +277,9 @@
                         </span>
                         3$$
                     </label>
-                    <input type="checkbox" id="newho2">
+                    </div>
+                    <div class="questionWindow">
+                    <input type="checkbox" name="question8" id="newho2">
                     <label for="newho2">
                         <span class="fakeChk">
                             <i class="far fa-square"></i>
@@ -251,7 +287,9 @@
                         </span>
                         all$$
                     </label>
-                    <input type="checkbox" id="newho3">
+                    </div>
+                    <div class="questionWindow">
+                    <input type="checkbox" name="question8" id="newho3">
                     <label for="newho3">
                         <span class="fakeChk">
                             <i class="far fa-square"></i>
@@ -259,7 +297,9 @@
                         </span>
                         1to1
                     </label>
-                    <input type="checkbox" id="newho4">
+                    </div>
+                    <div class="questionWindow">
+                    <input type="checkbox" name="question8" id="newho4">
                     <label for="newho4">
                         <span class="fakeChk">
                             <i class="far fa-square"></i>
@@ -267,11 +307,12 @@
                         </span>
                         no
                     </label>
+                    </div>
                     <button data-page="6" class="last">Last.</button>
                     <button class="go">Go</button>
                 </div>
             </div>
-            <div class="questionChange">
+            <div class="questionChange" style="display:none;">
                 <ul>
                     <li data-page="1" class="active">
                         <span></span>
