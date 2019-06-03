@@ -187,6 +187,20 @@ h1 {
   display: block;
 }
 
+.personalTitle {
+  font-size: 32px;
+  text-align: center;
+}
+
+.personalTitle h3 {
+  margin: 0;
+}
+
+.personalError span {
+  display: inline-block;
+  color: #f00;
+}
+
 @media screen and (max-width: 769px) {
   body {
     width: 414px;

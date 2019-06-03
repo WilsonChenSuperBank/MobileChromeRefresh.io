@@ -1,12 +1,10 @@
 
 $(".questionChange ul li").on("click", function () {
-   //console.log($(this).data("page"));
    var liDataPage = $(this);
    changeDataPage(liDataPage.data("page"));
 });
 
 $(".question button.next , .question button.last").on("click", function () {
-   //console.log($(this).data("page"));
    var liDataPage = $(this);
    changeDataPage(liDataPage.data("page"));
 });
@@ -21,33 +19,35 @@ $(".question button.go").on("click", function () {
    var question3From = inputChkTf("question3", 3);
    var question2From = inputChkTf("question2", 2);
    var question1From = inputChkTf("question1", 1);
-
    if (question8From && question7From && question6From && question5From && question4From && question3From && question2From && question1From) {
-      console.log("go");
       Swal.fire({
          type: 'success',
          title: '恭喜您完成問卷',
-         text: '可以回家睡覺ㄌ'
-       })
+         text: '三秒後回家睡覺',
+         onOpen:dododo("onClose"),
+         showConfirmButton:false,
+         allowOutsideClick:false,	
+         allowEscapeKey:false	
+      })
    }
    else {
-      console.log("not go");
       Swal.fire({
          type: 'error',
          title: '還有東西沒填',
          text: '可以專心一點ㄇ'
-       })
+      });
    }
 });
 
-var clk = 0;
 
-$("input[name=question6]").on("click",function(){
+//Easter Egg
+var clk = 0;
+$("input[name=question6]").on("click", function () {
    clk++;
-   if(clk>10){
-      $("#eggClk").attr("style","display:inline-block");
-   }
-})
+   (clk > 10)
+      ? $("#eggClk").attr("style", "display:inline-block")
+      : $("#eggClk").attr("style", "display:none");
+});
 
 //判斷input radio checkbox 有無勾選funtcion
 function inputChkTf(inputName, pageValue) {
@@ -67,20 +67,35 @@ function inputChkTf(inputName, pageValue) {
 //改變頁數funtcion
 function changeDataPage(liDataNum) {
    $(".question").each(function () {
-      if ($(this).data("page") === liDataNum) {
-         $(this).addClass("appear");
-      }
-      else {
-         $(this).removeClass("appear");
-      }
+      ($(this).data("page") === liDataNum)
+         ? $(this).addClass("appear")
+         : $(this).removeClass("appear")
    });
    $(".questionChange ul li").each(function () {
-      if ($(this).data("page") === liDataNum) {
-         $(this).addClass("active");
-      }
-      else {
-         $(this).removeClass("active");
-      }
+      ($(this).data("page") === liDataNum)
+         ? $(this).addClass("active")
+         : $(this).removeClass("active")
    });
 }
 
+// 繁寫
+function opIf(booleanNum) {
+   if (booleanNum === 0) {
+      return 'if1';
+   } else if (booleanNum === 1) {
+      return 'if2';
+   } else {
+      return 'if3';
+   }
+}
+// 簡寫
+function ezIf(booleanNum) {
+   return (booleanNum === 0) ? 'if1' : (booleanNum === 1) ? 'if2' : 'if3';
+}
+
+function dododo(doString){
+   console.log(doString);
+   setTimeout(function(){
+      window.location = "./PersonalPut.html";
+   },3000)
+}  
