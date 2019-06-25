@@ -43,11 +43,6 @@ body {
   height: 40em;
 }
 
-body {
-  font-family: 'Montserrat', sans-serif;
-  text-align: center;
-}
-
 .bigger {
   margin: 0;
   font-size: 60px;
